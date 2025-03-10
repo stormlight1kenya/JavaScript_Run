@@ -4,13 +4,16 @@
 let multiTable =[];
 
 //creating values to  huld the numbers and result
-let firstValue = 13;
-//firstValue = firstValue +1;
-let secondValue = 15;
-//secondValue = secondValue +1;
+let firstValue = parseInt(prompt("Enter a number"));
+
+let secondValue = parseInt(prompt("Enter a number"));
+
 let resultValue;
 
 //creating rows 
+if (isNaN(firstValue) || isNaN(secondValue)){
+    console.log("Please enter a number");
+}else{
 for (let i = 1; i <= firstValue; i++){
     let tempResult = [];
     for (let j = 1; j <= secondValue; j++){
@@ -20,3 +23,4 @@ for (let i = 1; i <= firstValue; i++){
    multiTable.push(tempResult);
 }
 console.table(multiTable);
+}
