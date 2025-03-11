@@ -1,8 +1,8 @@
-function addNumbers(){
-    let num1 = 10;
-    let num2 = 20;
-    let sum = num1 + num2;
-    return console.log(sum);
-};
-addNumbers();
-addNumbers(num1 = 7,num2 =8);
+let descriptWords = ['Cute','fair','Fancy','Delightful','Kind','Clever','Smart','Intelligent','Creative','Innovative','Creative','Smart','Intelligent','Creative','Innovative'];
+randomDescriptor = Math.floor(Math.random() * descriptWords.length);
+function userInput(){
+    userWords = prompt("Please Input Your Name");
+    return console.log(`You Have Entered: ${userWords} which has generated: ${descriptWords[randomDescriptor]}`);
+}
+
+userInput();
