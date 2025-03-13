@@ -19,3 +19,9 @@ let addFourNumbers = (numb1,numb2,numb3,numb4) => {
     console.log(numb1+numb2+numb3+numb4);
 }
 addFourNumbers(...twoNumbers,...secondNumber);
+
+console.log("Usiing rest Parameter");
+let usingRest = (wordOne,...wordTwo)=>{
+    console.log(wordOne,wordTwo);
+}
+usingRest('Hello there? ','How was your day? ', 'I hope it was lovely.','Just lime mine was!! ');
