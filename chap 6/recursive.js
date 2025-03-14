@@ -11,14 +11,12 @@ function getRecursive(nr) {
     getRecursive(3);
 
 
-function numberCheker(numberToCheck){
-    if(numberToCheck != 0){
-        numberCheker(numberToCheck-1);
-        console.log(numberToCheck);
-        
+function getFactorial(number){
+    if( number === 0){
+        return 1;
     }else{
-    console.log('1');}
+        return number * getFactorial(number-1);
+    }
 }
-//numberCheker(6);
-//numberCheker(1);
-numberCheker(0);
+
+console.log(getFactorial(5));
