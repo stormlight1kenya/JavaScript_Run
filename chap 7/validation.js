@@ -1,15 +1,18 @@
 //make city code satry with k
-class Pepoel{
-    #name;
+// the # symbol prevents a class property from being accessed outside the class
+
+class Person{
     #city
-    #address; 
-    constructor(name,city,address){
-        this.#name = name;
-       if(city.starsWith('K')){ this.#city = city;}else{
-        this.#city = 'K'+city;
-       }
-        this.#address = address;
-    }
-}
-let pepoel1 =new Pepoel('Betty','Jk1NO','Arizona SWJ 01');
-console.log(pepoel1.thisname);
+    constructor(firstname, secondname, city){
+        this.firstname = firstname;
+        this.secondname = secondname;
+        if(city.startsWith('+1')){
+            this.#city = city;}else{
+                this.#city = `+1${city}`
+            }
+    }}
+
+    let person1 = new Person('Tom','Wafula','+254');
+    console.log(person1);   
+    let person2 = new Person('Levi','Odessa','254');
+    console.log(person2);
