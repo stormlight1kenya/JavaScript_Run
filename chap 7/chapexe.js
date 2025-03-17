@@ -34,17 +34,17 @@ class Animal{
         this.#sound = sound;
     }
 }
-dog = new Animal;
+dog = new Animal();
 dog.type = 'Hound';
 dog.species = 'German Shephard';
 dog.sound = 'Bark';
 
-cat = new Animal;
+cat = new Animal();
 cat.type = 'Feline';
 cat.species = 'Orange Cat';
 cat.sound = 'Purr';
 
-duck = new Animal;
+duck = new Animal();
 duck.type = 'Bird';
 duck.species = 'Geese';
 duck.sound = 'Quack';
