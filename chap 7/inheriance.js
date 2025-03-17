@@ -34,12 +34,15 @@ class Motorcycle extends Vehicle {
         constructor(color,currentSpeed,maxSpeed,waterDiplacement){
         super(color,currentSpeed,maxSpeed);
         this.waterDiplacement = waterDiplacement;
+
+        }
         floatWater(){
             console.log('Hello there I am crusing on water');
 
         }
-
-
-        }
     }
-    let newVirginia = new Boat()y
+    let newVirginia = new Boat('White','0','50','gasoline');
+    console.log(newVirginia.color);
+    newVirginia.accelerate(5);
+    newVirginia.move();
+    newVirginia.floatWater();
