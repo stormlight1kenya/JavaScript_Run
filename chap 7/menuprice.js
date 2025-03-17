@@ -45,12 +45,12 @@ class Menu{
 }
 
 //Create two or three objects with different combinations of menu selections, and output the total cost in the console.
-item1 = new Menu;
+item1 = new Menu();
 item1.item = 'Burger';
 item1.quantity = 3;
 item1.price = 350;
 
-item2 = new Menu;
+item2 = new Menu();
 item2.item = 'Chips';
 item2.quantity = 2;
 item2.price = 200;

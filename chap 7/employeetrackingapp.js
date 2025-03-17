@@ -55,3 +55,6 @@ woman.info();
 man.info();
 
 //Iterate the contents of the array to output the results into the console, adding some text to make the output a full sentence.
+peopleArray.forEach(person => {
+    console.log(`The employees name is: ${person.firstname} ${person.lastname} and they have worked for ${person.yearsworked}.`);   
+})
