@@ -8,9 +8,11 @@
 <body>
     <input onchange="go(this)"></input>
     <script>
+        //The eval method shoud be avoied becuse it allows script injection o tje website 
         function go(e) {
         eval(e.value);
         }
         </script>
+
 </body>
 </html>
