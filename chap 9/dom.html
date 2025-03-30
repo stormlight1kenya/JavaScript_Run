@@ -1,0 +1,24 @@
+<!DOCTYPE html >
+<html>
+<div class="output"></div>
+
+<script>
+    //1. Select the page element as a JavaScript object
+    let prop1 = document.querySelector('div');
+
+    //Update the textContent property of the selected page element. 
+    let greeting = 'Hello JavaScript';
+    prop1.textContent = greeting;
+
+    console.log(prop1);
+    //Using the classList.add object method, add a class of red to the element
+    prop1.classList.add('Red');
+    console.log(prop1.classList)
+    
+    //Update the id property of the element to tester.
+    prop1.id = 'tester';
+
+    //Through the style object, add a backgroundColor property of red to the page element.
+    prop1.style.backgroundColor = 'red';
+</script>
+</html>
