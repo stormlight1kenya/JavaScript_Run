@@ -1,6 +1,7 @@
 //1. Create the previously specified string, and convert it to lowercase.
 
-let newString = 'I love JavaScript';
+//let newString = 'The quick Brown Fox Jumped over the lazy dog';
+let newString = prompt('Enter A sentence');
 let stringLowered = newString.toLowerCase();
 
 //2. Create an array containing the vowels: a, e, i, o, u.
