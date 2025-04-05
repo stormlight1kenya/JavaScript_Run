@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    
+</head>
+<body>
+
+<script>
+    let personWeight;
+    let personHeight;
+    let personBMI
+    if(personHeight != NaN){
+     personHeight = parseFloat(prompt('Enter Height'));
+    }else{
+        console.log("Enter Numbers Only");
+    }
+
+    if(personWeight != NaN){
+       personWeight = parseFloat(prompt('Enter Weight'));
+    }else{
+        console.log("Enter Numbers Only");
+    }
+
+    function bmiCalculator(height,weight){
+        height =personHeight;
+        weight = personHeight
+        personBMI = weight/(height * height);
+        return personBMI;
+
+    }
+</script>
+
+    
+</body>
+</html>
