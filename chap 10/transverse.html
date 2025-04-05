@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Let's find the treasure</h1>
-<div id="forest">
-<div id="tree1">
-<div id="squirrel"></div>
-<div id="flower"></div>
-</div>
-<div id="tree2">
-<div id="shrubbery">
-<div id="treasure"></div>
-</div>
-<div id="mushroom">
-<div id="bug"></div>
-</div>
-</div>
-</div>
+<h1 class="heading">Just an example 1</h1>
+<h1 class="heading">Just an example 2</h1>
+<h1 class="heading">Just an example 3</h1>
+<p id="para">this is an id selector</p>
+
+
+<script>
+    let idselector = document.getElementById('para');
+    console.log(idselector);
+    let h1elemnets = document.getElementsByTagName('h1');
+    let h1Array = [];
+ for (let index = 0; index < h1elemnets.length; index++) {
+    h1Array.push(h1elemnets[index]);
+    
+ }
+    console.log(h1Array[1]);
+
+    let classSelecor = document.getElementsByClassName('heading');
+    let classArray = [];
+    for (let i = 0; i < classSelecor.length; i++) {
+        classArray.push(classSelecor[i]);
+        
+    }
+    classArray.forEach(element => {
+        console.log(element);
+    });
+
+
+
+
+
+</script>
+
 </body>
 </html>
