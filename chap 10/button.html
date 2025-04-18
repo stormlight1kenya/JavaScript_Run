@@ -6,16 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="buttonOne()" id="btn1">Button 1</button>
-    <button onclick="buttonTwo()" id="bn2">Button 2</button>
+    <button onclick="buttonOne(); btn1Red()" id="btn1">Button 1</button>
+    <button onclick="buttonTwo(); btn2Blue()"  id="btn2">Button 2</button>
 <script>
    function buttonOne(){
         console.log('You have clicked Button 1');
     }
     function buttonTwo(){
         console.log('You have clicked Button 2');
+    
         
     }
+ function btn1Red(){
+  let colorRed =  document.getElementById('btn1');
+  if(colorRed.style.color === 'green'){
+  colorRed.style.color = 'red';}else{
+    colorRed.style.color = 'green';
+  }
+}
+
+function btn2Blue (){
+  let colorBlue = document.getElementById('btn2');
+  if(colorBlue.style.color === 'blue'){
+    colorBlue.style.color = 'orange';
+  }else{
+    colorBlue.style.color ='blue';
+  }
+  
+
+}
 </script>
     
 </body>
